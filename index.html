@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Harshith VH — Physicist &amp; Researcher</title>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- STARFIELD -->
+<canvas id="starfield"></canvas>
+
+<!-- FLOATING FORMULAS -->
+<div class="formula-layer" id="formulaLayer"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Harshith VH <span>/ Student</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#presentations">Presentations</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#recognition">Recognition</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#cv">CV</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section id="hero">
+  <canvas id="gwCanvas"></canvas>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-tag">BSc Physics &amp; Computer Science · Kristu Jayanti University</div>
+      <h1 class="hero-name">Harshith <em>VH</em></h1>
+      <p class="hero-title">Gravitational Waves · ML &amp; Data Analysis · Exoplanet Science</p>
+      <p class="hero-desc">
+        A physicist bridging observational astrophysics with computational methods — analyzing gravitational wave signals, studying exoplanet transits, and building machine learning models to decode the universe's most extreme phenomena.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">8.7</div>
+          <div class="stat-label">CGPA</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Research &amp; Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Workshops Led</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" style="font-size:1rem; padding-top:0.3rem">TIFR</div>
+          <div class="stat-label">Internship</div>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#research" class="btn-primary">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          View Research
+        </a>
+        <a href="mailto:harshith7research@gmail.com" class="btn-ghost">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          Get In Touch
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="section-label">01 — Profile</div>
+    <h2 class="section-title">About <em>Me</em></h2>
+
+    <div class="about-grid">
+
+      <!-- ── Photo card ── -->
+      <!-- HOW TO ADD YOUR PHOTO:
+           Replace the <div class="about-photo-placeholder">…</div> block below
+           with simply: <img class="about-photo-img" src="your-photo.jpg" alt="Harshith VH"/>
+           The image will auto-fill the frame perfectly. -->
+      <div class="about-photo-card reveal">
+        <div class="about-photo-frame">
+
+        
+        <img class="about-photo-img" src="ooty.jpg"> 
+
+          <div class="about-photo-caption">
+            <div class="about-photo-name">Harshith VH</div>
+            <div class="about-photo-role">Physicist · Researcher</div>
+          </div>
+        </div>
+        <div class="about-photo-glow"></div>
+      </div>
+
+      <!-- ── Bio text ── -->
+      <div class="about-text reveal">
+        <p>
+          I'm a final-year BSc Physics &amp; Computer Science student at
+          <strong>Kristu Jayanti University, Bengaluru</strong>, working at the
+          intersection of astrophysics and computational science. My research spans
+          gravitational wave data analysis, exoplanet imaging, and cosmic ray physics.
+        </p>
+        <p>
+          In June 2025, I completed a
+          <strong>Research Internship at TIFR's Cosmic Ray Laboratory, Ooty</strong> —
+          working hands-on with the Muon Telescope setup to study secondary cosmic ray
+          muon flux, operating scintillator-based detectors, and performing data
+          acquisition and preliminary analysis in a real experimental astrophysics
+          environment.
+        </p>
+        <p>
+          Beyond the lab, I build full-stack web applications, develop machine learning
+          pipelines for scientific data, and conduct workshops on gravitational wave
+          analysis and exoplanet transit curves for physics students. I believe the most
+          powerful tools in modern astrophysics live at the boundary of physics and code.
+        </p>
+        <div class="about-interest-tags">
+          <span class="interest-tag tag-gw">Gravitational Waves</span>
+          <span class="interest-tag tag-gw">Q-Transform Analysis</span>
+          <span class="interest-tag tag-gw">Bayesian Inference</span>
+          <span class="interest-tag tag-exo">Exoplanet Science</span>
+          <span class="interest-tag tag-exo">Transit Curves</span>
+          <span class="interest-tag tag-exo">PyKLIP / PSF</span>
+          <span class="interest-tag tag-ml">Machine Learning</span>
+          <span class="interest-tag tag-ml">Deep Learning</span>
+          <span class="interest-tag tag-cr">Cosmic Ray Physics</span>
+          <span class="interest-tag tag-cr">GRAPES-3 Experiment</span>
+          <span class="interest-tag tag-cr">Muon Detection</span>
+        </div>
+      </div>
+
+      <!-- ── Education & coursework ── -->
+      <div class="about-right reveal" style="transition-delay:0.2s">
+        <div class="edu-card">
+          <div class="edu-degree">BSc Physics &amp; Computer Science</div>
+          <div class="edu-inst">Kristu Jayanti (Deemed to be University)</div>
+          <div class="edu-meta">
+            <span class="edu-year">2023 – 2026</span>
+            <span class="edu-score">8.7 / 10 CGPA</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-degree">XI – XII Science</div>
+          <div class="edu-inst">The National Pre University College</div>
+          <div class="edu-meta">
+            <span class="edu-year">2021 – 2023</span>
+            <span class="edu-score">87%</span>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem">
+          <div class="section-label" style="font-size:0.6rem; margin-bottom:0.75rem">Coursework</div>
+          <div class="coursework-grid">
+            <span class="course-chip">Classical Mechanics</span>
+            <span class="course-chip">Quantum Mechanics</span>
+            <span class="course-chip">Semiconductor Physics</span>
+            <span class="course-chip">Condensed Matter</span>
+            <span class="course-chip">Atomic &amp; Nuclear Physics</span>
+            <span class="course-chip">Optics</span>
+            <span class="course-chip">Thermodynamics</span>
+            <span class="course-chip">Electricity &amp; Magnetism</span>
+            <span class="course-chip">DSA</span>
+            <span class="course-chip">Java</span>
+            <span class="course-chip">PHP Programming</span>
+            <span class="course-chip">DBMS &amp; SQL</span>
+            <span class="course-chip">Software Engineering</span>
+            <span class="course-chip">Scientific Computing (IIT Kanpur)</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ EXPERIENCE ══════════════ -->
+<section id="experience">
+  <div class="section-wrap">
+    <div class="section-label">02 — Experience</div>
+    <h2 class="section-title">Internship &amp; <em>Workshops</em></h2>
+
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-date">June 2025</div>
+        <div class="exp-type">Research Internship</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Research Intern — Cosmic Ray Physics</div>
+        <div class="exp-org">Cosmic Ray Laboratory, TIFR (NCRA), Ooty</div>
+        <ul class="exp-bullets">
+          <li>Worked with the Muon Telescope setup to study secondary cosmic ray muon flux at ground level.</li>
+          <li>Operated and calibrated scintillator-based detectors in the muon telescope array for particle detection and event triggering.</li>
+          <li>Performed data acquisition, quality checks, and preliminary analysis of proportional counter data.</li>
+          <li>Gained hands-on experience in high-energy particle detection instrumentation and data analysis pipelines in an experimental astrophysics environment.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-date">2024 – 2026</div>
+        <div class="exp-type">Workshops Conducted</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Workshop Facilitator — Astrophysics &amp; Data Analysis</div>
+        <div class="exp-org">Kristu Jayanti University, Student Enrichment Programs</div>
+        <ul class="exp-bullets">
+          <li><strong style="color:var(--cyan)">Introduction to Gravitational Waves and Data Analysis</strong> — Student Enrichment Program for BSc Physics Students (2026).</li>
+          <li><strong style="color:var(--cyan)">Exoplanet: Transit Curve Analysis and Advanced Imaging</strong> — Student Enrichment Program (2024).</li>
+          <li><strong style="color:var(--cyan)">Hands-On Session on Transit Curve Analysis</strong> — Student Enrichment Program (2024).</li>
+          <li><strong style="color:var(--cyan)">Cosmic Conundrums</strong> — Host at National Space Day 2024.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════ CONFERENCE PRESENTATIONS ══════════════ -->
+<section id="presentations" style="background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="section-wrap">
+    <div class="section-label">03 — Presentations</div>
+    <h2 class="section-title">Conference <em>Presentations</em></h2>
+
+    <div class="conf-list">
+      <div class="conf-item reveal">
+        <div class="conf-index">01</div>
+        <div class="conf-body">
+          <div class="conf-title">"Characteristic Analysis of Proportional Counters and Plastic Scintillators Used in the GRAPES-3 Experiment"</div>
+          <div class="conf-authors">Harshith V.H., Vaishnavi K., B. Hariharan (TIFR) <em>et al.</em></div>
+          <div class="conf-meta-row">
+            <span class="conf-event">NCARAS-2025 — National Conference on Astrophysics, Relativity &amp; Allied Sciences</span>
+            <span class="conf-venue">MVJ College of Engineering, Bengaluru · 2025</span>
+          </div>
+          <div class="conf-tags">
+            <span class="interest-tag tag-cr">Cosmic Ray Physics</span>
+            <span class="interest-tag tag-cr">GRAPES-3</span>
+            <span class="interest-tag tag-cr">Detector Characterization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ RESEARCH ══════════════ -->
+<section id="research">
+  <div class="section-wrap">
+    <div class="section-label">04 — Research</div>
+    <h2 class="section-title">Research <em>Interests</em></h2>
+    <!-- RESEARCH INTERESTS -->
+    <div class="research-interests-block">
+      <!--<div class="ri-label">Research Interests</div> -->
+      <div class="ri-grid">
+        <div class="ri-item ri-gw">
+          <div class="ri-icon">◈</div>
+          <div class="ri-content">
+            <div class="ri-title">Gravitational Waves &amp; Data Analysis</div>
+            <div class="ri-desc">Compact binary mergers, Q-transform time-frequency analysis, wavelet transforms, Bayesian inference for source parameter estimation</div>
+          </div>
+        </div>
+        <div class="ri-item ri-ml">
+          <div class="ri-icon">◈</div>
+          <div class="ri-content">
+            <div class="ri-title">Machine Learning &amp; Computational Physics</div>
+            <div class="ri-desc">Supervised &amp; unsupervised algorithms, deep learning, neural networks applied to astrophysical datasets</div>
+          </div>
+        </div>        
+        <div class="ri-item ri-exo">
+          <div class="ri-icon">◈</div>
+          <div class="ri-content">
+            <div class="ri-title">Exoplanet Science</div>
+            <div class="ri-desc">Transit curve analysis, high-contrast imaging, PSF subtraction (KLIP, PyKLIP), flux calibration &amp; planet mass estimation</div>
+          </div>
+        </div>
+
+        <div class="ri-item ri-cr">
+          <div class="ri-icon">◈</div>
+          <div class="ri-content">
+            <div class="ri-title">Cosmic Ray Physics</div>
+            <div class="ri-desc">Muon detection, scintillator-based detectors, data acquisition &amp; calibration, GRAPES-3 experiment</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ri-divider">
+      <h2 class="section-title">Research <em>Projects</em></h2>
+    </div>
+
+    <div class="research-grid">
+      
+
+      <div class="research-card reveal">
+        <div class="research-card-top">
+          <span class="research-year">2025</span>
+          <div class="research-field-dot dot-gw"></div>
+        </div>
+        <div class="research-title">Evolving Sensitivity of LIGO Livingston: Inspiral Range and Mass Scaling Across Observing Runs</div>
+        <div class="research-desc">Analyzed LIGO Livingston detector sensitivity across O1, O2, and O3 using ASD and noise characterization. Computed inspiral ranges for BNS, BBH, and BHNS systems showing significant sensitivity improvement (BNS: ~63 Mpc → ~110 Mpc). Identified deviation from theoretical d∝M^(5/6).</div>
+        <span class="research-tag tag-gw">Gravitational Waves</span>
+      </div>
+
+      <div class="research-card reveal" style="transition-delay:0.15s">
+        <div class="research-card-top">
+          <span class="research-year">2024</span>
+          <div class="research-field-dot dot-gw"></div>
+        </div>
+        <div class="research-title">Q-Transform Analysis of GW230529</div>
+        <div class="research-desc">Performed Q-transform time-frequency analysis of GW230529, a suspected neutron star–black hole (NSBH) merger. Identified a significant signal between −9 and −9.2 s relative to trigger time, suggesting potential early inspiral or noise artefacts.</div>
+        <span class="research-tag tag-gw">GW Data Analysis</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PROJECTS ══════════════ -->
+<section id="projects">
+  <div class="section-wrap">
+    <div class="section-label">05 — Projects</div>
+    <h2 class="section-title">Projects &amp; <em>Work</em></h2>
+    <div class="projects-grid">
+
+      <!-- ── Campus Sphere ── -->
+      <!-- HOW TO ADD AN IMAGE: inside .project-img-wrap, add <img src="campus-sphere.png" alt="Campus Sphere"/> -->
+      
+      <!-- ── GW Event Classifier ── -->
+      <div class="project-card reveal" style="transition-delay:0.2s">
+        <div class="project-img-wrap">
+          <!-- Replace src with your image, e.g. src="bbh.png" -->
+          <img src="bbh.png" alt="GW Event Classifier"/> 
+          <span class="project-img-label"></span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">GW Event Classifier</div>
+          <div class="project-desc">Machine learning model classifying gravitational wave events into BBH, BNS, and NSBH mergers using astrophysical parameters from GWOSC. Built with feature engineering and scikit-learn.</div>
+          <div class="project-tags">
+            <span class="project-tag">ML</span>
+            <span class="project-tag">Scikit-Learn</span>
+            <span class="project-tag">PyCBC</span>
+            <span class="project-tag">Classification</span>
+          </div>
+          <a href="https://github.com/Harshithvh07" target="_blank" class="project-github-link">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- ── Exoplanet Habitability ── -->
+      <div class="project-card reveal" style="transition-delay:0.3s">
+        <div class="project-img-wrap">
+          <img src="exo.png" alt="Exoplanet Habitability"/> 
+          <span class="project-img-label"></span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Predicting Habitability of Exoplanets</div>
+          <div class="project-desc">Applied Logistic Regression to classify exoplanet habitability using planet radius, mass, equilibrium temperature, stellar mass, and other features. Model predicts whether an exoplanet falls within the habitable zone.</div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Scikit-Learn</span>
+            <span class="project-tag">Exoplanet Science</span>
+          </div>
+          <a href="https://github.com/Harshithvh07" target="_blank" class="project-github-link">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- ── Earthquake Prediction ── -->
+      <div class="project-card reveal" style="transition-delay:0.1s">
+        <div class="project-img-wrap">
+          <img src="eq.png" alt="Earthquake Prediction"/> 
+          <span class="project-img-label"></span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Earthquake Magnitude Prediction</div>
+          <div class="project-desc">Developed and optimised Random Forest, Gradient Boosting, and SVR models on historical Indian seismic data. Analysed model performance using statistical metrics and visualised prediction accuracy.</div>
+          <div class="project-tags">
+            <span class="project-tag">ML</span>
+            <span class="project-tag">Random Forest</span>
+            <span class="project-tag">SVR</span>
+            <span class="project-tag">Seismic Data</span>
+          </div>
+          <a href="https://github.com/Harshithvh07" target="_blank" class="project-github-link">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- ── Rainfall Classification ── -->
+      <div class="project-card reveal" style="transition-delay:0.2s">
+        <div class="project-img-wrap">
+          <img src="rain.png" alt="Rainfall Classification"/> 
+          <span class="project-img-label"></span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Rainfall Classification Using ML</div>
+          <div class="project-desc">Implemented Random Forest, SVM, and Logistic Regression to classify annual rainfall patterns in India into Low, Medium, and High categories. Applied feature engineering on historical weather data.</div>
+          <div class="project-tags">
+            <span class="project-tag">ML</span>
+            <span class="project-tag">SVM</span>
+            <span class="project-tag">Classification</span>
+          </div>
+          <a href="https://github.com/Harshithvh07" target="_blank" class="project-github-link">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+<div class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="logo.png" alt="Campus Sphere"/> 
+          <span class="project-img-label"></span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Campus Sphere</div>
+          <div class="project-desc">Full-stack campus social and resource platform featuring event discovery, club management, academic resource sharing, and student networking with a scalable backend architecture.</div>
+          <div class="project-tags">
+            <span class="project-tag">Full-Stack</span>
+            <span class="project-tag">Web App</span>
+            <span class="project-tag">Social Platform</span>
+          </div>
+          <a href="https://github.com/Harshithvh07" target="_blank" class="project-github-link">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- ── Ionic Plasma Thruster ── -->
+      <div class="project-card reveal" style="transition-delay:0.1s">
+        <div class="project-img-wrap">
+          <img src="ionic.png" alt="Ionic Plasma Thruster"/> 
+          <span class="project-img-label"></span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Ionic Plasma Thruster — Experimental Model</div>
+          <div class="project-desc">Developed a working prototype of an ionic plasma thruster accelerating ionised particles via high-voltage electric field. Explored feasibility for satellite propulsion and deep-space applications.</div>
+          <div class="project-tags">
+            <span class="project-tag">Experimental Physics</span>
+            <span class="project-tag">Propulsion</span>
+            <span class="project-tag">Prototype</span>
+          </div>
+          <a href="https://github.com/Harshithvh07" target="_blank" class="project-github-link">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- ── Gravitational Acceleration ── -->
+      <div class="project-card reveal" style="transition-delay:0.3s">
+        <div class="project-img-wrap">
+          <img src="free.png" alt="Gravitational Acceleration"/> 
+          <span class="project-img-label"></span>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Gravitational Acceleration via Linear Regression</div>
+          <div class="project-desc">Applied linear regression to free-fall experimental data to estimate gravitational acceleration. Modelled the relationship between fall-time squared and height using controlled drop measurements.</div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Linear Regression</span>
+            <span class="project-tag">Computational Physics</span>
+          </div>
+          <a href="https://github.com/Harshithvh07" target="_blank" class="project-github-link">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ RECOGNITION ══════════════ -->
+<section id="recognition">
+  <div class="section-wrap">
+    <div class="section-label">06 — Recognition</div>
+    <h2 class="section-title">Awards &amp; <em>Honours</em></h2>
+    <div style="display:flex; flex-direction:column; gap:0.75rem; max-width:680px;">
+      <div class="award-item">
+        <div class="award-icon gold">🏆</div>
+        <div class="award-content">
+          <div class="award-title">First Prize — Poster Presentation</div>
+          <div class="award-org">National Conference NCARAS-2025 · MVJ College of Engineering, Bengaluru</div>
+        </div>
+      </div>
+      <div class="award-item">
+        <div class="award-icon gold">🥇</div>
+        <div class="award-content">
+          <div class="award-title">Synergia — Physics Fest Winner</div>
+          <div class="award-org">Kristu Jayanti College · 2024</div>
+        </div>
+      </div>
+      <div class="award-item">
+        <div class="award-icon silver">🎬</div>
+        <div class="award-content">
+          <div class="award-title">Short Film Making — Winner</div>
+          <div class="award-org">Kristu Jayanti College · 2023</div>
+        </div>
+      </div>
+      <div class="award-item">
+        <div class="award-icon blue">🎓</div>
+        <div class="award-content">
+          <div class="award-title">Merit — XII Standard</div>
+          <div class="award-org">The National Pre University College · 2023</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SKILLS ══════════════ -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="section-label">07 — Skills</div>
+    <h2 class="section-title">Technical <em>Skills</em></h2>
+    <div class="skills-grid">
+
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Programming Languages</div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">Python</span><span class="skill-pct">95%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-cyan" data-width="95"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">C / C++</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-cyan" data-width="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">Java</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-cyan" data-width="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">Julia</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-cyan" data-width="60"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal" style="transition-delay:0.1s">
+        <div class="skill-group-title">Gravitational Wave &amp; Astrophysics</div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">GWpy</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-amber" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">PyCBC</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-amber" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">Q-Transform / Bayesian Inference</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-amber" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">PyKLIP / PSF Subtraction</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-amber" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal" style="transition-delay:0.2s">
+        <div class="skill-group-title">Machine Learning</div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">Scikit-Learn</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-green" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">TensorFlow / Deep Learning</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-green" data-width="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">XGBoost / Random Forest</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-green" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">Pandas / NumPy / Matplotlib</span><span class="skill-pct">92%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-green" data-width="92"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal" style="transition-delay:0.3s">
+        <div class="skill-group-title">Web Development</div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">HTML / CSS / JS</span><span class="skill-pct">88%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-purple" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">PHP / MySQL</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-purple" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">React</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-purple" data-width="65"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">LaTeX / Git / Linux</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-purple" data-width="85"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal" style="transition-delay:0.3s">
+        <div class="skill-group-title">AI / NLP / LLMs</div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">Natural Language Processing</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-pink" data-width="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">Large Language Models</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-pink" data-width="65"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">Text Processing (Tokenization & Embeedings)</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-pink" data-width="60"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">Transformer Architecture</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar"><div class="skill-fill fill-pink" data-width="60"></div></div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CERTIFICATIONS ══════════════ -->
+<section id="certifications">
+  <div class="section-wrap">
+    <div class="section-label">08 — Training</div>
+    <h2 class="section-title">Certifications &amp; <em>Schools</em></h2>
+    <div class="cert-grid">
+
+      <div class="cert-card c-cyan reveal">
+        <div class="cert-issuer">ISRO</div>
+        <div class="cert-name">ISRO START Program 2026</div>
+        <div class="cert-year">2026</div>
+      </div>
+      <div class="cert-card c-amber reveal" style="transition-delay:0.1s">
+        <div class="cert-issuer">Caltech / LIGO</div>
+        <div class="cert-name">LIGO Undergraduate Study Hub</div>
+        <div class="cert-year">2025</div>
+      </div>
+      <div class="cert-card c-green reveal" style="transition-delay:0.3s">
+        <div class="cert-issuer">Altium</div>
+        <div class="cert-name">PCB Designing Workshop</div>
+        <div class="cert-year">2025</div>
+      </div>      
+      <div class="cert-card c-green reveal" style="transition-delay:0.2s">
+        <div class="cert-issuer">IIT Kanpur · NPTEL</div>
+        <div class="cert-name">Scientific Computing using Python</div>
+        <div class="cert-year">Completed 2025</div>
+      </div>
+      <div class="cert-card c-purple reveal" style="transition-delay:0.3s">
+        <div class="cert-issuer">ICTS, Bangalore</div>
+        <div class="cert-name">ICTS-TIFR Gravitational Waves Open Data Workshop</div>
+        <div class="cert-year">2024</div>
+      </div>
+      <div class="cert-card c-amber reveal" style="transition-delay:0.1s">
+        <div class="cert-issuer">NASA / Caltech</div>
+        <div class="cert-name">NASA Sagan Workshop</div>
+        <div class="cert-year">2024</div>
+      </div>
+      <div class="cert-card c-cyan reveal" style="transition-delay:0.2s">
+        <div class="cert-issuer">IISc, Bangalore</div>
+        <div class="cert-name">Pravega Astrophysics Workshop</div>
+        <div class="cert-year">2023</div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CV ══════════════ -->
+<section id="cv">
+  <div class="section-wrap">
+    <div class="section-label">09 — CV</div>
+    <h2 class="section-title">Curriculum <em>Vitae</em></h2>
+    <div class="cv-block">
+      <div class="cv-info">
+        <p>My full curriculum vitae covers my academic background, research projects, internship experience, conference presentations, technical skills, and training programs.</p>
+        <p>Last updated <strong>April 2026</strong>.</p>
+      </div>
+      <a href="Harshith_VH_CV_2026.pdf" target="_blank" class="cv-download-btn">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="12" y1="18" x2="12" y2="12"/>
+          <polyline points="9 15 12 18 15 15"/>
+        </svg>
+        <div>
+          <div class="cv-btn-title">Open Full CV</div>
+          <div class="cv-btn-sub">PDF · April 2026</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="section-label">10 — Contact</div>
+    <h2 class="section-title">Get In <em>Touch</em></h2>
+    <div class="contact-inner">
+      <div>
+        <div class="contact-text">
+          <p>Interested in research collaboration, workshop invitations, or just want to talk astrophysics and code? I'd love to hear from you.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:harshith7research@gmail.com" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            </div>
+            <div>
+              <div style="font-size:0.7rem;font-family:'JetBrains Mono';color:var(--text-muted);margin-bottom:0.15rem">Email</div>
+              harshith7research@gmail.com
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/harshith-vh" target="_blank" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div style="font-size:0.7rem;font-family:'JetBrains Mono';color:var(--text-muted);margin-bottom:0.15rem">LinkedIn</div>
+              linkedin.com/in/harshith-vh
+            </div>
+          </a>
+          <a href="https://github.com/Harshithvh07" target="_blank" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <div>
+              <div style="font-size:0.7rem;font-family:'JetBrains Mono';color:var(--text-muted);margin-bottom:0.15rem">GitHub</div>
+              github.com/Harshithvh07
+            </div>
+          </a>
+          <div class="contact-link" style="cursor:default">
+            <div class="contact-link-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div style="font-size:0.7rem;font-family:'JetBrains Mono';color:var(--text-muted);margin-bottom:0.15rem">Location</div>
+              Bengaluru, Karnataka, India
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right column intentionally left for future form or map -->
+      <div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="footer-copy">© 2026 Harshith VH · Bengaluru, India</div>
+  <div class="footer-sig">Probing the universe, one signal at a time.</div>
+</footer>
+
+<script>
+// ── STARFIELD ──
+const canvas = document.getElementById('starfield');
+const ctx = canvas.getContext('2d');
+let stars = [];
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+function initStars() {
+  stars = [];
+  for (let i = 0; i < 280; i++) {
+    stars.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 1.2,
+      o: Math.random() * 0.7 + 0.1,
+      speed: Math.random() * 0.015 + 0.005,
+      twinkle: Math.random() * Math.PI * 2
+    });
+  }
+}
+function drawStars() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  stars.forEach(s => {
+    s.twinkle += s.speed;
+    const opacity = s.o * (0.6 + 0.4 * Math.sin(s.twinkle));
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(200,230,255,${opacity})`;
+    ctx.fill();
+  });
+  ctx.fillStyle = 'rgba(0,212,255,0.6)';
+  stars.slice(0, 8).forEach(s => {
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.r * 1.5, 0, Math.PI * 2);
+    ctx.fill();
+  });
+  requestAnimationFrame(drawStars);
+}
+resizeCanvas(); initStars(); drawStars();
+window.addEventListener('resize', () => { resizeCanvas(); initStars(); });
+
+// ── GW WAVEFORM ──
+const gwCanvas = document.getElementById('gwCanvas');
+const gwCtx = gwCanvas.getContext('2d');
+let gwT = 0;
+function resizeGW() {
+  gwCanvas.width = gwCanvas.parentElement.offsetWidth;
+  gwCanvas.height = 180;
+}
+function drawGW() {
+  gwCtx.clearRect(0, 0, gwCanvas.width, gwCanvas.height);
+  const w = gwCanvas.width, h = gwCanvas.height;
+  const cx = w / 2, cy = h / 2;
+  gwCtx.beginPath();
+  for (let x = 0; x < w; x++) {
+    const t = (x - cx) / w * 8;
+    const freq = 0.5 + Math.pow(Math.max(0, t + 4), 1.8) * 0.3;
+    const amp = 30 * Math.exp(-Math.pow(t - 2, 2) / 6) * (1 + 2 * Math.exp(-Math.pow(t - 3, 2) / 0.5));
+    const y = cy + amp * Math.sin(freq * t * 8 + gwT);
+    x === 0 ? gwCtx.moveTo(x, y) : gwCtx.lineTo(x, y);
+  }
+  const grad = gwCtx.createLinearGradient(0, 0, w, 0);
+  grad.addColorStop(0,   'rgba(0,212,255,0)');
+  grad.addColorStop(0.3, 'rgba(0,212,255,0.3)');
+  grad.addColorStop(0.7, 'rgba(0,212,255,0.5)');
+  grad.addColorStop(1,   'rgba(0,212,255,0)');
+  gwCtx.strokeStyle = grad;
+  gwCtx.lineWidth = 1.5;
+  gwCtx.stroke();
+  gwT += 0.025;
+  requestAnimationFrame(drawGW);
+}
+resizeGW(); drawGW();
+window.addEventListener('resize', resizeGW);
+
+// ── FLOATING FORMULAS ──
+const formulas = [
+  'G_μν + Λg_μν = 8πT_μν','h = ΔL/L','Ψ(x,t) = Ae^{i(kx-ωt)}',
+  'ĤΨ = iℏ ∂Ψ/∂t','E = mc²','F = GMm/r²','L = T - V',
+  'd/dt(∂L/∂q̇) = ∂L/∂q','S = k_B ln(Ω)','ΔxΔp ≥ ℏ/2',
+  '∇·E = ρ/ε₀','∇×B = μ₀J + μ₀ε₀∂E/∂t','ds² = -c²dt² + dr²',
+  'R_μν - ½g_μν R = 8πG T_μν','f_GW = 2/T_orbital',
+  'dE/dt = -32G⁴m₁²m₂²(m₁+m₂)/5c⁵r⁵','SNR = h_0 / S_n(f)'
+];
+const layer = document.getElementById('formulaLayer');
+function spawnFormula() {
+  const el = document.createElement('div');
+  el.className = 'formula';
+  el.textContent = formulas[Math.floor(Math.random() * formulas.length)];
+  el.style.left = Math.random() * 90 + '%';
+  el.style.fontSize = (Math.random() * 0.6 + 0.8) + 'rem';
+  el.style.opacity = (Math.random() * 0.05 + 0.03);
+  const dur = Math.random() * 30 + 25;
+  el.style.animationDuration = dur + 's';
+  el.style.animationDelay = Math.random() * -dur + 's';
+  layer.appendChild(el);
+  setTimeout(() => el.remove(), (dur + 5) * 1000);
+}
+for (let i = 0; i < 12; i++) spawnFormula();
+setInterval(spawnFormula, 4000);
+
+// ── NAV SCROLL + ACTIVE ──
+const navbar = document.getElementById('navbar');
+const sections = document.querySelectorAll('section[id]');
+const navAnchors = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 120) current = s.id;
+  });
+  navAnchors.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+});
+
+// ── MOBILE MENU ──
+function toggleMenu() {
+  document.querySelector('nav').classList.toggle('nav-mobile-open');
+}
+navAnchors.forEach(a => a.addEventListener('click', () => {
+  document.querySelector('nav').classList.remove('nav-mobile-open');
+}));
+
+// ── REVEAL ON SCROLL ──
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      e.target.querySelectorAll('.skill-fill').forEach(bar => {
+        bar.style.width = bar.dataset.width + '%';
+      });
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+document.querySelectorAll('.skill-fill').forEach(bar => {
+  if (bar.getBoundingClientRect().top < window.innerHeight)
+    bar.style.width = bar.dataset.width + '%';
+});
+</script>
+</body>
+</html>
