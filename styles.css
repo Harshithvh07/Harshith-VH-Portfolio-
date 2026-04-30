@@ -8,6 +8,8 @@
   --amber-dim: rgba(245,158,11,0.12);
   --green: #10b981;
   --purple: #a855f7;
+  --pink: #e4256e;
+  --blue: #176ed3;
   --text: #e2e8f0;
   --text-muted: #64748b;
   --text-dim: #94a3b8;
@@ -558,6 +560,7 @@ section { position: relative; z-index: 10; }
 .tag-exo { background: rgba(245,158,11,0.08); color: var(--amber);  border: 1px solid rgba(245,158,11,0.2); }
 .tag-ml  { background: rgba(16,185,129,0.08); color: var(--green);  border: 1px solid rgba(16,185,129,0.2); }
 .tag-cr  { background: rgba(168,85,247,0.08); color: var(--purple); border: 1px solid rgba(168,85,247,0.2); }
+.tag-ai  { background: rgba(168,85,247,0.08); color: var(--pink);   border: 1px solid rgba(236, 7, 56, 0.2); }
 
 /* Education cards */
 .edu-card {
@@ -1058,6 +1061,8 @@ section { position: relative; z-index: 10; }
 .cert-card.c-amber::before  { background: var(--amber);  }
 .cert-card.c-green::before  { background: var(--green);  }
 .cert-card.c-purple::before { background: var(--purple); }
+.cert-card.c-pink::before { background: var(--pink); }
+.cert-card.c-blue::before { background: var(--blue); }
 .cert-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.4); }
 .cert-issuer {
   font-family: 'JetBrains Mono', monospace;
